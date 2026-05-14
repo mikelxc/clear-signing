@@ -1,11 +1,11 @@
-import type { GitHubSource, RegistryIndex } from "./types";
+import type { GitHubSource, RegistryIndex } from "./types.js";
 import {
   DEFAULT_REPO,
   DEFAULT_REF,
   fetchRegistryFilePaths,
   fetchRegistryFile,
-} from "./github-registry-client";
-import { normalizeAddress } from "./utils";
+} from "./github-registry-client.js";
+import { normalizeAddress } from "./utils.js";
 
 function indexDescriptor(
   descriptor: Record<string, unknown>,

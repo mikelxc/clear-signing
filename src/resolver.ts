@@ -2,15 +2,15 @@ import {
   DEFAULT_REPO,
   DEFAULT_REF,
   fetchRegistryFile,
-} from "./github-registry-client";
+} from "./github-registry-client.js";
 import type {
   Descriptor,
   EmbeddedResolverOptions,
   GitHubResolverOptions,
   GitHubSource,
   RegistryIndex,
-} from "./types";
-import { normalizeAddress } from "./utils";
+} from "./types.js";
+import { normalizeAddress } from "./utils.js";
 
 /**
  * Uses the index to resolve a descriptor path, then fetches and returns the
