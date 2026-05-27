@@ -60,6 +60,16 @@ export const eip712 = {
   extractPrimaryType,
 };
 
+// ERC-8176 descriptor hashing primitives + EAS schema constants. Every
+// wallet that surfaces auditor attestations needs these; centralising them
+// in the library that owns the descriptor format keeps the JCS spec
+// implementation in one place.
+export {
+  canonicalize,
+  computeDescriptorHash,
+  ERC7730_EAS_SCHEMA_UID,
+} from "./attestation/index.js";
+
 /**
  * Formats a single transaction's calldata into a human-readable {@link DisplayModel}.
  *
